@@ -1,0 +1,18 @@
+/* فایل CSS اصلی پروژه (مثلاً index.css) */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000000; /* رنگ دلخواه کل صفحه */
+}
+
+/* نمایش کامل آیتم‌های منو روی موبایل */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .ant-layout-header::-webkit-scrollbar { display: none; }
+  .ant-menu-overflow-item-rest { display: none !important; }
+  .ant-menu-overflow { flex-wrap: nowrap !important; }
+}

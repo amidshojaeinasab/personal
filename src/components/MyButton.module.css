@@ -1,0 +1,25 @@
+﻿.socialBtn {
+  font-size: 30px;
+  color: #eaebed !important;
+}
+
+.socialBtn:hover {
+  color: #00B5AD !important;
+}
+
+.customBtn{
+  background-color: #00B5AD !important;
+}
+
+.customBtn:hover {
+  color: #ffffff !important;
+}
+
+.SkillsBtn{
+    background: none !important;
+}
+
+.SkillsBtn:hover {
+  color: #ffffff !important;
+  background-color: #00B5AD !important;
+}
