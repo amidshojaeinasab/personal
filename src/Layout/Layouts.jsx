@@ -6,7 +6,7 @@ function Layouts({children}) {
     <div className={styles.app} >
       <header className={styles.nav}>
         <div className={styles.logo}>
-          <span>noah.</span>
+          <span>Shojaei Nasab</span>
         </div>
 
         <nav className={styles.menu}>

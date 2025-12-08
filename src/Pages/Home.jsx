@@ -10,7 +10,7 @@ function Home() {
     <>
     <main className={styles.hero}>
         <section className={styles.hero_left}>
-          <p className={styles.subtitle}>Hey, I am <span>Noah</span></p>
+          <p className={styles.subtitle}>Hey, I am <span>Amid</span></p>
           <h1 className={styles.title}>Web Developer</h1>
           <p className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sit amet

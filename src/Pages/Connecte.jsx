@@ -39,13 +39,14 @@ function Connecte() {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className={styles.input_half}
+                className={`${styles.input} ${styles.half}`}
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className={styles.input_half}
+                className={`${styles.input} ${styles.half}`}
+                
               />
             </div>
 
@@ -53,17 +54,17 @@ function Connecte() {
               type="text"
               name="subject"
               placeholder="Subject"
-              className={styles.input}
+              className={`${styles.input} ${styles.half}`}
             />
 
             <textarea
               name="message"
               placeholder="Message"
-              className={styles.input_textarea}
+              className={`${styles.input} ${styles.textarea}`}
             ></textarea>
 
             <button type="submit" className={styles.btn_primary}>
-              Submit <span style="margin-inline-start: 10px">🚀</span>
+              Submit 
             </button>
           </form>
         </section>
