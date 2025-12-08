@@ -1,17 +1,10 @@
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import { ConfigProvider } from "antd";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <ConfigProvider
-    theme={{
-      token: {
-        colorPrimary: "#ff4d4f",   // رنگ اصلی
-        colorBgBase: "#f5f5f5",    // رنگ پس‌زمینه کلی
-        colorText: "#1a1a1a",      // رنگ متن‌ها
-      },
-    }}
-  >
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </ConfigProvider>
-);
+  </StrictMode>,
+)

@@ -1,0 +1,250 @@
+﻿.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.7fr);
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero_left {
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #e5e5e5;
+}
+
+.subtitle span {
+  color: #00b9ed;
+  font-weight: 600;
+}
+
+.title {
+  font-size: clamp(42px, 5vw, 60px);
+  line-height: 1.1;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 15px;
+  color: #b3b3b3;
+  max-width: 380px;
+  margin-bottom: 32px;
+}
+
+.cta_row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.btn_primary {
+  background: linear-gradient(135deg, #00b9ed, #0284c7);
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 14px 30px rgba(0, 185, 237, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn_primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(0, 185, 237, 0.8);
+}
+
+.btn_primary { /* reuse existing but make sure it fits */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.divider {
+  width: 100%;
+  max-width: 400px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  margin-bottom: 26px;
+}
+
+.testimonial {
+  width: 320px;
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 26px;
+  padding: 18px 20px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.testimonial::before {
+  content: "“";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.testimonial_text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #ececec;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.testimonial_footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00b9ed, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.avatar span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.person_name {
+  font-weight: 600;
+}
+
+.person_role {
+  color: #a1a1a1;
+}
+
+.hero_right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+
+ .hero_right {
+    order: 1;
+}
+
+.orbit {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 185, 237, 0.8);
+  display: block;
+  inset: 0;
+  margin: auto;
+  z-index: 3;
+}
+
+.character_wrap {
+  width: min(340px, 80%);
+  aspect-ratio: 3 / 4;
+  border-radius: 40px;
+  background: radial-gradient(circle at 20% 0, #1d3557 0, #020617 60%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.character_img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 999px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.8);
+  background: radial-gradient(circle at 30% 0, #1f2937 0, #020617 70%);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+}
+
+.badge img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.badge_html {
+  border-color: rgba(0, 185, 237, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg) translate(170px)
+    rotate(20deg);
+}
+
+.badge_css {
+  border-color: rgba(59, 130, 246, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg) translate(170px)
+    rotate(-60deg);
+}
+
+.badge_js {
+  border-color: rgba(59, 130, 246, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(150deg) translate(170px)
+    rotate(-150deg);
+}
+
+.badge_react {
+  border-color: rgba(56, 189, 248, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(230deg) translate(170px)
+    rotate(-230deg);
+}
+

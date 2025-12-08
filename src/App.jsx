@@ -1,12 +1,19 @@
-import './App.css'
-import LayoutDashboard from './components/LayoutDashboard'
+
+import Layouts from './Layout/Layouts'
+import Home from './Pages/Home'
+import Skills from './Pages/Skills'
+import Connecte from './Pages/Connecte'
 
 function App() {
- 
+  
 
   return (
     <>
-      <LayoutDashboard />
+      <Layouts>
+        <Home/>
+        <Skills/>
+        <Connecte/>
+      </Layouts>
     </>
   )
 }

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  /* پس‌زمینه از حالت مشکی یک‌دست خارج شد و گرادیان وینیت گرفت */
+  background:
+    radial-gradient(circle at 0% 100%, #00b9ed59 0, transparent 50%),
+    radial-gradient(circle at 100% 0%, rgba(0, 24, 54, 0.9) 0, transparent 60%),
+    radial-gradient(circle at 50% 50%, #020617 0, #000 70%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 20px;
+}

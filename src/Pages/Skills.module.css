@@ -1,0 +1,158 @@
+﻿.skills_main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.skills_text {
+  color: #f9fafb;
+}
+
+.skills_description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #9ca3af;
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+
+.skills_cta {
+  padding: 12px 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  background: #00b9ed;
+  box-shadow: 0 14px 28px rgba(0, 185, 237, 0.6);
+}
+
+.skills_orbit_section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.skills_orbit_card {
+  width: 420px;
+  height: 420px;
+  border-radius: 38px;
+  background: radial-gradient(circle at 0% 0%, #0b1120 0, #020617 65%);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills_orbit_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50%;
+  background: radial-gradient(circle at 0% 0%, #0b1120 0, #020617 65%);
+}
+
+.skills_orbit_glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 185, 237, 0.6), transparent 70%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(8px);
+}
+
+.skills_orbit_ring_outer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.skills_orbit_badge {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 30% 0%, #020617, #111827);
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+}
+
+.skills_orbit_badge img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Slightly offset timings so icons don't float in unison */
+.skills_orbit_badge {
+  /* keep existing absolute placement, but allow a subtle vertical float via animating `top` */
+  animation: floatTop 4s ease-in-out infinite;
+}
+
+/* Slightly offset timings so badges don't float in unison */
+.skills_orbit_badge_html { animation-delay: 0s; }
+.skills_orbit_badge_css { animation-delay: 0.4s; }
+.skills_orbit_badge_js { animation-delay: 0.8s; }
+.skills_orbit_badge_react { animation-delay: 1.2s; }
+.skills_orbit_badge_react_center { animation-duration: 6s; animation-delay: 0.6s; }
+
+@keyframes floatTop {
+  0% { top: 50%; }
+  25% { top: calc(50% - 8px); }
+  50% { top: 50%; }
+  75% { top: calc(50% + 6px); }
+  100% { top: 50%; }
+}
+
+/* Hover to increase float speed and lift the badge slightly */
+.skills_orbit_badge:hover {
+  animation-duration: 2s;
+  top: calc(50% - 10px);
+}
+
+.skills_orbit_badge_html {
+  transform: translate(-50%, -50%) rotate(210deg) translate(170px)
+    rotate(-210deg);
+}
+
+.skills_orbit_badge_css {
+  transform: translate(-50%, -50%) rotate(240deg) translate(170px)
+    rotate(-240deg);
+}
+
+.skills_orbit_badge_js {
+  transform: translate(-50%, -50%) rotate(300deg) translate(170px)
+    rotate(-300deg);
+}
+
+.skills_orbit_badge_react {
+  transform: translate(-50%, -50%) rotate(330deg) translate(170px)
+    rotate(-330deg);
+}
+
+.skills_orbit_badge_react_center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+}
