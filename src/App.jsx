@@ -1,21 +1,34 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layouts from './Layout/Layouts'
-import Home from './Pages/Home'
-import Skills from './Pages/Skills'
-import Connecte from './Pages/Connecte'
+import Home from "./Pages/Home";
+import Skills from "./Pages/Skills";
+import Connecte from "./Pages/Connecte";
 
 function App() {
-  
-
   return (
-    <>
-      <Layouts>
-        <Home/>
-        <Skills/>
-        <Connecte/>
-      </Layouts>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+              <Home />
+          }
+        />
+        <Route
+          path="/Skills"
+          element={
+              <Skills />
+          }
+        />
+        <Route
+          path="/Connecte"
+          element={
+              <Connecte />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

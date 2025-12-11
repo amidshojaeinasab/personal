@@ -1,8 +1,11 @@
 ﻿import styles from "./Connecte.module.css"
+import Layouts from "../Layout/Layouts"
 
 function Connecte() {
   return (
     <>
+    <div className={styles.app} >
+      <Layouts/>
     <main className={styles.connect_main}>
         <section className={styles.connect_social}>
           <h2 className={styles.connect_title}>Social Networks</h2>
@@ -69,6 +72,7 @@ function Connecte() {
           </form>
         </section>
       </main>
+    </div>
     </>
   )
 }

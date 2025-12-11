@@ -4,10 +4,13 @@ import html from "../assets/html.svg"
 import js from "../assets/js.svg"
 import react from "../assets/react.svg"
 import img from "../assets/img.png"
+import Layouts from "../Layout/Layouts"
 
 function Home() {
   return (
     <>
+    <div className={styles.app} >
+      <Layouts/>
     <main className={styles.hero}>
         <section className={styles.hero_left}>
           <p className={styles.subtitle}>Hey, I am <span>Amid</span></p>
@@ -65,6 +68,7 @@ function Home() {
           </div>
         </section>
       </main>
+      </div>
     </>
   )
 }
